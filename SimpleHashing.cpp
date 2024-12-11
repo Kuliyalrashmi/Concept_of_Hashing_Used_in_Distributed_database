@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class ConsistentHashing{
+class SimpleHashing{
     private:
     unordered_map<int,string>storage_nodes;
     unordered_map<string, int> data_mapping;
@@ -9,7 +9,7 @@ class ConsistentHashing{
 
     public:
     
-    ConsistentHashing(int size){
+    SimpleHashing(int size){
         cout<<"Started Hashing with storage nodes : "<<size<<endl;
         storage_size = size;
     }
@@ -105,7 +105,7 @@ int main(){
     cin >> nodes;
 
 
-    ConsistentHashing con_hash(nodes);
+    SimpleHashing con_hash(nodes);
 
     cout << "-------------- WELCOME TO A DEMO SIMULATION OF HASHING -------------" << endl;
     cout << "Options:\n1. Insert Data\n2. Fetch Data\n3. Scale Up\n4. Scale Down\n5. Exit\n";
