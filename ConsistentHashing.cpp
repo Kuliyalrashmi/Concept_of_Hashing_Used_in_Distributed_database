@@ -64,7 +64,7 @@ class ConsistentHashing{
         return hash_ring[node_hash];
     }
 
-}
+};
 
 
 int main() {
